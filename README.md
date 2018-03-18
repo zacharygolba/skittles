@@ -1,5 +1,7 @@
 # skittles
 
+[![CircleCI branch](https://img.shields.io/circleci/project/github/zacharygolba/skittles/master.svg?style=flat-square)](https://circleci.com/gh/zacharygolba/skittles/tree/master) [![AppVeyor branch](https://img.shields.io/appveyor/ci/zacharygolba/skittles/master.svg?logo=appveyor&style=flat-square)](https://ci.appveyor.com/project/zacharygolba/skittles/branch/master)
+
 Add colors and formatting to ANSI terminal output with easy-to-use macros built on top of [`ansi_term`](https://docs.rs/ansi_term).
 
 ## Installation
@@ -21,7 +23,7 @@ extern crate skittles;
 
 ## Usage
 
-Each macro provided by `skittles` can accept a string literal, an expression that evaluates to a string like value, or a format string with arguments as input.
+Each macro provided by `skittles` can accept a string literal or a format string with arguments as input.
 
 ```rust
 println!(
