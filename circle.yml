@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: rust
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - cache-{{ checksum "circle.yml" }}
+      - run:
+          name: Install Dependencies
+          command: |
+            rustup install stable nightly
+            rustup default stable
+            rustup component add rustfmt-preview
+            cargo +nightly install clippy
+      - save_cache:
+          key: cache-{{ checksum "circle.yml" }}
+          paths:
+            - /usr/local/cargo
+      - run:
+          name: Check Code Style
+          command: cargo fmt -- --error-on-unformatted --write-mode checkstyle
+      - run:
+          name: Run Clippy Lints
+          command: cargo +nightly clippy
+      - run:
+          name: Run Test Suite
+          command: cargo test

@@ -1,0 +1,14 @@
+[package]
+name = "skittles"
+version = "0.1.0"
+authors = ["Zachary Golba <zachary.golba@postlight.com>"]
+categories = ["command-line-interface"]
+description = "Add colors and formatting to ANSI terminal output with easy-to-use macros."
+documentation = "https://docs.rs/skittles/0.1"
+keywords = ["colors", "console", "format", "macro", "paint", "terminal"]
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/zacharygolba/skittles"
+
+[dependencies]
+ansi_term = "0.11.0"
