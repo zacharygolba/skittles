@@ -1,6 +1,6 @@
 # skittles
 
-[![CircleCI branch](https://img.shields.io/circleci/project/github/zacharygolba/skittles/master.svg?style=flat-square)](https://circleci.com/gh/zacharygolba/skittles/tree/master) [![AppVeyor branch](https://img.shields.io/appveyor/ci/zacharygolba/skittles/master.svg?logo=appveyor&style=flat-square)](https://ci.appveyor.com/project/zacharygolba/skittles/branch/master)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/zacharygolba/skittles/master.svg?style=flat-square)](https://circleci.com/gh/zacharygolba/skittles/tree/master) [![AppVeyor branch](https://img.shields.io/appveyor/ci/zacharygolba/skittles/master.svg?logo=appveyor&style=flat-square)](https://ci.appveyor.com/project/zacharygolba/skittles/branch/master) [![Crates.io](https://img.shields.io/crates/v/skittles.svg?style=flat-square)](https://crates.io/crates/skittles)
 
 Add colors and formatting to ANSI terminal output with easy-to-use macros built on top of [`ansi_term`](https://docs.rs/ansi_term).
 
