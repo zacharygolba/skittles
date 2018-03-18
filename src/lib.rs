@@ -20,8 +20,8 @@
 //!
 //! # Usage
 //!
-//! Each macro provided by `skittles` can accept a string literal, an expression that
-//! evaluates to a string like value, or a format string with arguments as input.
+//! Each macro provided by `skittles` can accept a string literal or a format string with
+//! arguments as input.
 //!
 //! ```rust
 //! # #[macro_use]

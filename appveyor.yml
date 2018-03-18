@@ -14,8 +14,8 @@ install:
   - rustup install stable nightly
   - rustup default stable
   - rustup component add rustfmt-preview
-  - cargo +nightly install clippy
+  - cargo +nightly install clippy --force
 test_script:
-  - cargo fmt -- --error-on-unformatted --write-mode checkstyle
+  - cargo fmt -- --error-on-unformatted --write-mode diff
   - cargo +nightly clippy
   - cargo test
